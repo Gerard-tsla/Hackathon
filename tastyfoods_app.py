@@ -13,8 +13,8 @@ st.markdown("<h1 style='text-align: center;'>Tasty Foods 🍜</h1>", unsafe_allo
 st.markdown("<h2 style='text-align: center;'>Food Recommendation System 😋 </h1>", unsafe_allow_html=True)
 
 st.write("-----------------")
-#st.write('''###### Github''')
-#st.write('''###### Kaggle''')
+#st.write('''###### Explore My Code Here: https://github.com/Grace-Hephzibah/Food-Recommender''')
+#st.write('''###### Kaggle: https://www.kaggle.com/code/gracehephzibahm/food-recommendation-system-easy-comprehensive/''')
 
 st.write("-----------------")
 food_choice = st.selectbox("Pick a Food ", foods)
@@ -54,5 +54,5 @@ with c3:
     st.write("------------------")
 
 st.write("------------------")
-st.subheader("✨ STAT 280 ML Hackathon ✨")
+st.subheader("✨ By Grace Hephzibah For SheBuilds Hackathon ✨")
 st.write("------------------")
