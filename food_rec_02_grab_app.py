@@ -20,14 +20,14 @@ st.set_page_config(
 # Apply Grab's brand colors to the Streamlit theme
 st.markdown(f"""
     <style>
-    .reportview-container .main .block-container{{
+    .reportview-container .main .block-container {{
         max-width: 1000px;
         padding-top: 2rem;
         padding-right: 1rem;
         padding-left: 1rem;
         padding-bottom: 2rem;
     }}
-    .css-1aumxhk{{
+    .css-1aumxhk {{
         background-color: {PRIMARY_COLOR} !important;
     }}
     </style>
@@ -45,9 +45,15 @@ st.markdown(f"""
 t = test.result()
 foods = t.food()
 
-favicon = Image.open("imgs/logo.png")
+grab_logo = Image.open("imgs/grab_logo.png")
+tasty_food_image = Image.open("imgs/tasty_food_image.png")
+
+st.image(grab_logo, use_column_width=True)
+
 st.markdown("<h1 style='text-align: center;'>Tasty Foods 🍜</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center;'>Food Recommendation System 😋</h2>", unsafe_allow_html=True)
+
+st.image(tasty_food_image, use_column_width=True)
 
 st.write("-----------------")
 st.write("-----------------")
