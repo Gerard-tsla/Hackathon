@@ -11,7 +11,7 @@ FONT = "Arial"  # Replace with the desired font
 
 # Set page config
 st.set_page_config(
-    page_title='Tasty Foods',
+    page_title='Grab Food Recommender',
     page_icon="imgs/logo.png",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -46,14 +46,10 @@ t = test.result()
 foods = t.food()
 
 grab_logo = Image.open("imgs/grab_logo.png")
-tasty_food_image = Image.open("imgs/tasty_food_image.png")
-
 st.image(grab_logo, use_column_width=True)
 
 st.markdown("<h1 style='text-align: center;'>Tasty Foods 🍜</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center;'>Food Recommendation System 😋</h2>", unsafe_allow_html=True)
-
-st.image(tasty_food_image, use_column_width=True)
 
 st.write("-----------------")
 st.write("-----------------")
@@ -85,7 +81,6 @@ with c2:
     st.write("------------------")
 
 with c3:
-    st.subheader("Advanced Content Based Filtering")
     st.subheader("Advanced Content Based Filtering")
     st.write("Recommends food based on similar foods and its features")
     st.write("------------------")
